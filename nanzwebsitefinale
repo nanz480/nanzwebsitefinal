@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NANZX - VEXA DELUXE</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:
+        radial-gradient(circle at 10% 10%,#252525 0,transparent 25%),
+        radial-gradient(circle at 90% 85%,#1b1b1b 0,transparent 25%),
+        #050505;
+    color:#fff;
+    min-height:100vh;
+    padding:25px 15px;
+}
+
+.container{
+    width:100%;
+    max-width:560px;
+    margin:auto;
+}
+
+/* CHANNEL */
+.channel{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:100%;
+    padding:13px 16px;
+    margin-bottom:25px;
+
+    background:#111;
+    border:1px solid #333;
+    border-radius:12px;
+
+    color:#fff;
+    text-decoration:none;
+
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.5px;
+
+    transition:.2s;
+}
+
+.channel span{
+    font-size:12px;
+}
+
+.channel b{
+    font-size:16px;
+}
+
+.channel:hover{
+    background:#1d1d1d;
+    border-color:#666;
+    transform:translateY(-1px);
+}
+
+.channel:active{
+    transform:scale(.97);
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.small{
+    color:#777;
+    font-size:12px;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.logo{
+    font-size:40px;
+    font-weight:900;
+    letter-spacing:5px;
+}
+
+.subtitle{
+    color:#777;
+    font-size:13px;
+    margin-top:10px;
+}
+
+.line{
+    height:1px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #555,
+        transparent
+    );
+    margin:25px 0;
+}
+
+/* SECTION */
+.section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.section-title{
+    font-size:18px;
+    font-weight:800;
+}
+
+.section-tag{
+    color:#888;
+    border:1px solid #333;
+    padding:5px 9px;
+    border-radius:20px;
+    font-size:10px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+/* PRODUCT */
+.card{
+    position:relative;
+    display:block;
+    text-decoration:none;
+    color:#fff;
+
+    background:linear-gradient(
+        145deg,
+        #171717,
+        #0b0b0b
+    );
+
+    border:1px solid #292929;
+    border-radius:15px;
+    padding:18px;
+
+    overflow:hidden;
+    cursor:pointer;
+    user-select:none;
+
+    transition:
+        transform .15s ease,
+        border-color .15s ease,
+        background .15s ease;
+}
+
+.card:hover{
+    transform:translateY(-2px);
+    border-color:#777;
+
+    background:linear-gradient(
+        145deg,
+        #202020,
+        #0d0d0d
+    );
+}
+
+.card:active{
+    transform:scale(.96);
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+
+    width:80px;
+    height:80px;
+
+    right:-30px;
+    top:-30px;
+
+    background:#fff;
+    opacity:.025;
+    border-radius:50%;
+}
+
+.featured{
+    border-color:#555;
+}
+
+/* BADGE */
+.badge{
+    display:inline-block;
+
+    background:#fff;
+    color:#000;
+
+    font-size:9px;
+    font-weight:bold;
+
+    padding:4px 7px;
+    border-radius:5px;
+
+    margin-bottom:12px;
+}
+
+/* TEXT */
+.duration{
+    font-size:16px;
+    font-weight:800;
+}
+
+.desc{
+    color:#666;
+    font-size:11px;
+    margin-top:5px;
+}
+
+.price{
+    font-size:23px;
+    font-weight:900;
+    margin-top:18px;
+}
+
+/* PERMANEN */
+.permanent{
+    grid-column:span 2;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.permanent .price{
+    margin-top:0;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    color:#555;
+    font-size:11px;
+    line-height:1.7;
+    margin-top:25px;
+}
+
+/* MOBILE */
+@media(max-width:400px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .permanent{
+        grid-column:span 1;
+    }
+
+    .logo{
+        font-size:34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- CHANNEL WHATSAPP -->
+    <a
+        class="channel"
+        href="https://whatsapp.com/channel/0029VbCGWQw297535RdXrS1F"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <span>●</span>
+        JOIN CHANNEL 24/7
+        <b>→</b>
+    </a>
+
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <div class="small">
+            VEXA DELUXE
+        </div>
+
+        <div class="logo">
+            NANZX
+        </div>
+
+        <div class="subtitle">
+            Premium Access • Fast • Simple
+        </div>
+
+    </div>
+
+
+    <div class="line"></div>
+
+
+    <!-- PRICE LIST -->
+    <div class="section-head">
+
+        <div class="section-title">
+            Daily Package
+        </div>
+
+        <div class="section-tag">
+            TAP TO BUY
+        </div>
+
+    </div>
+
+
+    <div class="grid">
+
+        <!-- 1 DAY -->
+        <a
+            class="card"
+            href="https://wa.me/628886167506?text=Halo%20NANZX%2C%20saya%20mau%20order%20VEXA%20DELUXE%201%20Day%20-%203K"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <div class="duration">1 Day</div>
+            <div class="desc">24 Hours Access</div>
+            <div class="price">3K</div>
+        </a>
+
+
+        <!-- 2 DAY -->
+        <a
+            class="card"
+            href="https://wa.me/628886167506?text=Halo%20NANZX%2C%20saya%20mau%20order%20VEXA%20DELUXE%202%20Day%20-%204K"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <div class="duration">2 Day</div>
+            <div class="desc">48 Hours Access</div>
+            <div class="price">4K</div>
+        </a>
+
+
+        <!-- 3 DAY -->
+        <a
+            class="card"
+            href="https://wa.me/628886167506?text=Halo%20NANZX%2C%20saya%20mau%20order%20VEXA%20DELUXE%203%20Day%20-%205K"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <div class="duration">3 Day</div>
+            <div class="desc">72 Hours Access</div>
+            <div class="price">5K</div>
+        </a>
+
+
+        <!-- 5 DAY -->
+        <a
+            class="card"
+            href="https://wa.me/628886167506?text=Halo%20NANZX%2C%20saya%20mau%20order%20VEXA%20DELUXE%205%20Day%20-%208K"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <div class="duration">5 Day</div>
+            <div class="desc">5 Days Access</div>
+            <div class="price">8K</div>
+        </a>
+
+
+        <!-- 7 DAY -->
+        <a
+            class="card featured"
+            href="https://wa.me/628886167506?text=Halo%20NANZX%2C%20saya%20mau%20order%20VEXA%20DELUXE%207%20Day%20-%2010K"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <div class="badge">
+                POPULAR
+            </div>
+
+            <div class="duration">
+                7 Day
+            </div>
+
+            <div class="desc">
+                1 Week Access
+            </div>
+
+            <div class="price">
+                10K
+            </div>
+
+        </a>
+
+
+        <!-- 1 BULAN -->
+        <a
+            class="card"
+            href="https://wa.me/628886167506?text=Halo%20NANZX%2C%20saya%20mau%20order%20VEXA%20DELUXE%201%20Bulan%20-%2015K"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <div class="duration">
+                1 Bulan
+            </div>
+
+            <div class="desc">
+                30 Days Access
+            </div>
+
+            <div class="price">
+                15K
+            </div>
+
+        </a>
+
+
+        <!-- PERMANEN -->
+        <a
+            class="card permanent featured"
+            href="https://wa.me/628886167506?text=Halo%20NANZX%2C%20saya%20mau%20order%20VEXA%20DELUXE%20Permanen%20-%2025K"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <div>
+
+                <div class="badge">
+                    BEST VALUE
+                </div>
+
+                <div class="duration">
+                    Permanen
+                </div>
+
+                <div class="desc">
+                    Lifetime Access
+                </div>
+
+            </div>
+
+            <div class="price">
+                25K
+            </div>
+
+        </a>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        Tekan paket yang ingin dibeli<br>
+        © 2026 NANZX • VEXA DELUXE
+    </div>
+
+</div>
+
+</body>
+</html>
